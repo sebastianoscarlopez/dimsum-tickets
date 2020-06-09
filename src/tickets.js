@@ -9,6 +9,16 @@ const getDefaults = (name) => ({
 
 export default [
   {
+    ...getDefaults('Accordion'),
+    type: 'group',
+    children: [
+      {
+        ...getDefaults('ASO-7513'),
+        path: 'Accordion/ASO-7513',
+      }
+    ]
+  },
+  {
     ...getDefaults('DataGrid'),
     type: 'group',
     children: [
